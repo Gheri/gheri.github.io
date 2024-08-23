@@ -3,118 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Gheri Rupchandani - Resume</title>
     <style>
         body {
-            width: 100vw;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
         header {
             text-align: center;
+            margin-bottom: 20px;
         }
-
-        div {
-            margin: auto;
-            max-width: 50%;
+        header h1 {
+            margin: 0;
+            font-size: 2em;
         }
-
-        h1 {
-            font-weight: 700;
+        header p {
+            font-size: 1.2em;
+            color: #555;
         }
-
-        h2 {
-            font-weight: 500;
+        .contact-info {
+            text-align: center;
+            margin-bottom: 40px;
         }
-
-        h3 {
-            font-weight: 400;
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
         }
-
-        hr {
-            width: 70%;
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .company {
+            font-style: italic;
+            color: #555;
+        }
+        .date {
+            float: right;
+            font-size: 0.9em;
+            color: #888;
+        }
+        ul {
+            list-style-type: square;
+            margin: 0;
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Gheri Rupchandani</h1>
-        <h2>Staff Software Engineer</h2>
-    </header>
-    <hr>
-    <div>
-        <h2>Work Experience</h2>
-        <h3>Staff Software Engineer, Warner bros Discovery (Aug 2021 - Present)</h3>
-        <ul>
-            <li>Grooming Backlog, Tech/Design Analysis, Sign Ups, Mentoring. Lead the entire cycle of <br>
-software and delivery from tech analysis to deployment.</li>
-            <li>Implement integrations with demand/exchange partners in US and EMEA. This enables to optimize its <br>
-yield for revenue and consumer experience in tandem. Ensured E2E development cycle from scoping <br>
-requirements, development to deployment & monitoring. It was released with high quality standards and <br>
-improved latency. </li>
-        <li>Improved higher yield of ad breaks by implementing Wrapper Ad fetch Optimization. It helped Product <br>
-team to decide tradeoff between Customer experience (VST) and Revenue(ads). It improved Ad Fill <br>
-Rate and reduction of Inventory Waste. </li>
-        <li> R&D on Next Gen SSAI Architecture by experimenting advanced DASH features on Roku/dash.js <br>
-player. This would help system to reduce infra cost while supporting high concurrency & scale, improve <br>
-ad performance and providing flexibility for the use of dynamic Ad loads, improve consumer experience <br>
-by reducing video startup times.</li>
-        </ul>
+    <div class="container">
+        <header>
+            <h1>Gheri Rupchandani</h1>
+            <p>Mumbai, Maharashtra, India</p>
+        </header>
+
+        <div class="contact-info">
+            <p>Email: <a href="mailto:gheri.rupchandani@gmail.com">gheri.rupchandani@gmail.com</a></p>
+            <p>Phone: +91 8149660848</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/gheri" target="_blank">linkedin.com/in/gheri</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>With over 12 years of experience in software development, I have honed my skills at renowned companies such as GE, Vistaprint, Thoughtworks, and Warner Bros Discovery. My expertise lies in agile methodologies and team leadership, enabling me to drive teams to deliver high-quality software on time.</p>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <div>
+                <div class="job-title">Staff Software Engineer <span class="date">Aug 2021 - Present</span></div>
+                <div class="company">Warner Bros. Discovery</div>
+                <ul>
+                    <li>Grooming Backlog, Tech/Design Analysis, Sign Ups, Mentoring.</li>
+                    <li>Spearheaded integrations with exchange partners across the US and EMEA.</li>
+                    <li>Increased ad break yields by implementing Wrapper Ad fetch optimization.</li>
+                    <li>Pioneered research and development of next-generation SSAI architecture.</li>
+                    <li>Led the convergence of acquisition pipelines to establish a single, centralized authoritative source of asset inventory.</li>
+                </ul>
+            </div>
+            <!-- Add other job experiences similarly -->
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p>Bachelor's degree, Information Technology<br>University of Mumbai, 2008 - 2012</p>
+        </div>
+
+        <div class="section">
+            <h2>Licenses & Certifications</h2>
+            <ul>
+                <li>GoLang - Udemy</li>
+                <li>MongoDB Basics - MongoDB</li>
+                <li>Rest API Design - Udemy</li>
+                <!-- Add other certifications similarly -->
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <p>Technical Leadership, Microservices, Node.js, AWS, Go, Backend, Ad Tech, .NET Framework, Kubernetes, MongoDB</p>
+        </div>
     </div>
-    <div>
-        <h2>Work Experience</h2>
-        <h3>Senior Software Engineer, Cimpress (Mar 2018 - Feb 2021)</h3>
-        <ul>
-            <li>Throughput 2X Improvement by moving to AWS Redis <br>
-Improved the throughput of hangfire jobs by 2X with AWS Elastic cache redis without down time, Fault- <br>
-tolerant/reliable solution. This was critical project as migration was done for ~10 micro services with 50K <br>
-requests per minute</li>
-            <li>Increased the throughput by 40% in embroidery design reviews. Migrated stitch generation algorithms <br>
-from javascript to Go-Lang.</li>
-        <li>Customer success story <br>
-Enhanced design review time by auto populating properties based on product type (cap, jacket, bag, <br>
-blanket). Built lean tool in AWS-API-Gateway-Lambda to automate the config setting based on product <br>
-type.</li>
-        <li> Empower and inspire others <br>
-Supported new hires by giving training sessions and holding stand-ups / debugging sessions and <br>
-frequent feedback loop with team so that they onboard faster.</li>
-        </ul>
-    </div>
-    <div>
-        <h2>Work Experience</h2>
-        <h3>Software Engineer, GE Energy (June 2012 - Mar 2018)</h3>
-        <ul>
-            <li>Grooming Backlog, Tech/Design Analysis, Sign Ups, Mentoring. Lead the entire cycle of <br>
-software and delivery from tech analysis to deployment.</li>
-            <li>Implement integrations with demand/exchange partners in US and EMEA. This enables to optimize its <br>
-yield for revenue and consumer experience in tandem. Ensured E2E development cycle from scoping <br>
-requirements, development to deployment & monitoring. It was released with high quality standards and <br>
-improved latency. </li>
-        <li>Improved higher yield of ad breaks by implementing Wrapper Ad fetch Optimization. It helped Product <br>
-team to decide tradeoff between Customer experience (VST) and Revenue(ads). It improved Ad Fill <br>
-Rate and reduction of Inventory Waste. </li>
-        <li> R&D on Next Gen SSAI Architecture by experimenting advanced DASH features on Roku/dash.js <br>
-player. This would help system to reduce infra cost while supporting high concurrency & scale, improve <br>
-ad performance and providing flexibility for the use of dynamic Ad loads, improve consumer experience <br>
-by reducing video startup times.</li>
-        </ul>
-    </div>
-    <hr>
-    <div>
-        <h2>Education</h2>
-        <h3>Bachelors of Engineering in Computer Science, Mumbai University (2008 - 2012)</h3>
-        <ul>
-            <li>CGPA: 7.0</li>
-        </ul>
-    </div>
-    <hr>
-    <div>
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: JS, TS, C#, Java, Python, GoLang</li>
-            <li>Database: Postgres, MongoDB</li>
-            <li>Cloud: AWS</li>
-        </ul>
-    </div>
-    <hr>
 </body>
 </html>
