@@ -11,7 +11,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
         }
         .header {
@@ -39,6 +39,14 @@
             border-bottom: 2px solid #000;
             padding-bottom: 5px;
         }
+        .two-columns {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .column {
+            flex: 1;
+        }
         ul {
             list-style: none;
             padding: 0;
@@ -46,7 +54,7 @@
         ul li {
             margin-bottom: 10px;
         }
-        .profile-summary, .work-experience {
+        .profile-summary {
             margin-top: 30px;
         }
     </style>
@@ -71,56 +79,69 @@
             <p>With over 12 years of experience in software development, I have honed my skills at renowned companies such as GE, Vistaprint, ThoughtWorks, and Warner Bros Discovery. My expertise lies in agile methodologies and team leadership, enabling me to drive teams to deliver high-quality software on time. I excel in working with geographically dispersed teams, fostering a culture of collaboration and continuous improvement. I effectively communicate with stakeholders at all levels and have a proven track record of building teams from scratch, including hiring, onboarding, and training new members.</p>
         </div>
 
-        <div class="section work-experience">
-            <h3>Work Experience</h3>
-            <ul>
-                <li><strong>Staff Software Developer</strong> - Warner Bros Discovery (08/2021 - Present)
-                    <ul>
-                        <li>Oversaw and managed grooming backlog, conducted tech/design analysis, and mentored team members.</li>
-                        <li>Led the end-to-end cycle of software development and delivery, from tech analysis to deployment.</li>
-                        <li>Spearheaded strategic integrations with exchange partners across the US and EMEA, optimizing revenue yield and enhancing consumer experience.</li>
-                        <li>Enhanced ad performance by implementing Wrapper Ad fetch optimization, resulting in increased ad break yields and strategic decision-making on customer experience versus revenue trade-offs.</li>
-                        <li>Led the convergence of acquisition pipelines to establish a centralized authoritative source of asset inventory.</li>
-                    </ul>
-                </li>
-                <li><strong>Senior Consultant</strong> - ThoughtWorks (02/2021 - 08/2021)
-                    <ul>
-                        <li>Supervised a team of 7 members to successfully enable Mutual funds for NRI clients.</li>
-                        <li>Optimized Redis queries, leading to a 20% reduction in query response time.</li>
-                    </ul>
-                </li>
-                <li><strong>Senior Software Engineer</strong> - Cimpress India (03/2018 - 02/2021)
-                    <ul>
-                        <li>Improved throughput by 2X by migrating to AWS ElasticCache Redis, enhancing the performance of Hangfire jobs for 10 microservices handling 50K requests per minute.</li>
-                        <li>Implemented a fault-tolerant, reliable solution with zero downtime.</li>
-                        <li>Migrated stitch generation algorithms from JavaScript to Go, boosting throughput by 40% in embroidery design reviews.</li>
-                        <li>Developed a lean tool using AWS API Gateway and Lambda to automate configuration settings.</li>
-                        <li>Enabled CI/CD by migrating all projects to GitLab.</li>
-                    </ul>
-                </li>
-                <li><strong>Software Developer</strong> - GE Oil & Gas (06/2012 - 03/2018)
-                    <ul>
-                        <li>Integrated with a third-party tool to implement 3D/2D charts, improving development time by 30%.</li>
-                        <li>Owned the development of complex features such as global scales and correlation of speed with amplitude data.</li>
-                        <li>Led an automation project using CodedUI for the Application Development Kit used for configuring wind turbines.</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        <div class="section two-columns">
+            <!-- Left Column (Skills) -->
+            <div class="column">
+                <h3>Key Skills</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>.Net</li>
+                    <li>AWS</li>
+                    <li>Node.js</li>
+                    <li>API Development</li>
+                    <li>ElasticCache</li>
+                    <li>MongoDB</li>
+                    <li>Kubernetes</li>
+                    <li>Go</li>
+                    <li>Data Structures</li>
+                    <li>Design</li>
+                </ul>
 
-        <div class="section skills">
-            <h3>Key Skills</h3>
-            <ul>
-                <li>Java</li>
-                <li>C#</li>
-                <li>.Net</li>
-                <li>AWS</li>
-                <li>Node.js</li>
-                <li>API Development</li>
-                <li>ElasticCache</li>
-                <li>MongoDB</li>
-                <li>Kubernetes</li>
-            </ul>
+                <h3>Languages</h3>
+                <ul>
+                    <li>English</li>
+                    <li>Hindi</li>
+                </ul>
+            </div>
+
+            <!-- Right Column (Work Experience) -->
+            <div class="column">
+                <h3>Work Experience</h3>
+                <ul>
+                    <li><strong>Staff Software Developer</strong> - Warner Bros Discovery (08/2021 - Present)
+                        <ul>
+                            <li>Oversaw and managed grooming backlog, conducted tech/design analysis, and mentored team members.</li>
+                            <li>Led the end-to-end cycle of software development and delivery, from tech analysis to deployment.</li>
+                            <li>Spearheaded strategic integrations with exchange partners across the US and EMEA, optimizing revenue yield and enhancing consumer experience.</li>
+                            <li>Enhanced ad performance by implementing Wrapper Ad fetch optimization, resulting in increased ad break yields and strategic decision-making on customer experience versus revenue trade-offs.</li>
+                            <li>Led the convergence of acquisition pipelines to establish a centralized authoritative source of asset inventory.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Senior Consultant</strong> - ThoughtWorks (02/2021 - 08/2021)
+                        <ul>
+                            <li>Supervised a team of 7 members to successfully enable Mutual funds for NRI clients.</li>
+                            <li>Optimized Redis queries, leading to a 20% reduction in query response time.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Senior Software Engineer</strong> - Cimpress India (03/2018 - 02/2021)
+                        <ul>
+                            <li>Improved throughput by 2X by migrating to AWS ElasticCache Redis, enhancing the performance of Hangfire jobs for 10 microservices handling 50K requests per minute.</li>
+                            <li>Implemented a fault-tolerant, reliable solution with zero downtime.</li>
+                            <li>Migrated stitch generation algorithms from JavaScript to Go, boosting throughput by 40% in embroidery design reviews.</li>
+                            <li>Developed a lean tool using AWS API Gateway and Lambda to automate configuration settings.</li>
+                            <li>Enabled CI/CD by migrating all projects to GitLab.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Software Developer</strong> - GE Oil & Gas (06/2012 - 03/2018)
+                        <ul>
+                            <li>Integrated with a third-party tool to implement 3D/2D charts, improving development time by 30%.</li>
+                            <li>Owned the development of complex features such as global scales and correlation of speed with amplitude data.</li>
+                            <li>Led an automation project using CodedUI for the Application Development Kit used for configuring wind turbines.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="section education">
